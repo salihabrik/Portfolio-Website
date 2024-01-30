@@ -86,11 +86,11 @@ section{
     width: 35vw;
     border-radius: 50%;
     -webkit-border-radius:;
-    animation:floatImage 1s ease-in-out infinite;
+    animation:floatImage 2s ease-in-out infinite;
     -moz-border-radius:;
     -ms-border-radius:;
     -o-border-radius:;
-    -webkit-animation:floatImage 1s ease-in-out infinite;
+    -webkit-animation:floatImage 2s ease-in-out infinite;
 }
 
 @keyframes floatImage {
@@ -190,8 +190,12 @@ span{
 }
 
 .about-img img{
-    width: 35vw;
+    width: 20vw;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .heading{
