@@ -28,6 +28,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -72,8 +73,30 @@ section{
     justify-content: center;
     align-items: center;
 }
+#menu-icon{
+    font-size: 3.9rem;
+}
+.home-img img{
+    width: 35vw;
+    animation:floatImage 4s ease-in-out infinite;
+}
 
-
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+        -webkit-transform: translateY(-2.4rem);
+        -moz-transform: translateY(-2.4rem);
+        -ms-transform: translateY(-2.4rem);
+        -o-transform: translateY(-2.4rem);
+}
+    100%{
+        transform: translateY(0);
+    }
+    
+}
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
@@ -378,15 +401,26 @@ span{
     section {
         padding: 10rem 3% 2rem;
     }
+    .services {
+        padding: 7rem;
+    }
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+    .contact {
+        min-height: auto;
+    }
     .footer {
         padding: 2rem 3%;
     }
 }
 
-@media (max-width: 767px) {
-    #menu-icon {
+@media (max-width: 768px) {
+    #menu-icon { 
         display: block;
+
     }
+    
     .navbar {
         position: absolute;
         top: 100%;
@@ -420,4 +454,58 @@ span{
         margin-top: 4rem;
     }
 
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+    .about-img img {
+        width: 90vw;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }

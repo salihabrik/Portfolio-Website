@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=http://127.0.0.1:5500/index.html
+HostUrl=http://127.0.0.1:5500/my-cv.pdf
