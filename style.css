@@ -16,7 +16,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #910A67;
 }
 
 html{
@@ -50,7 +50,7 @@ section{
 }
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
@@ -61,6 +61,10 @@ section{
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 .navbar a:hover,
@@ -75,10 +79,18 @@ section{
 }
 #menu-icon{
     font-size: 3.9rem;
+    display: none;
 }
 .home-img img{
+    margin-left: 5rem;
     width: 35vw;
-    animation:floatImage 4s ease-in-out infinite;
+    border-radius: 50%;
+    -webkit-border-radius:;
+    animation:floatImage 3s ease-in-out infinite;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    -webkit-animation:floatImage 3s ease-in-out infinite;
 }
 
 @keyframes floatImage {
@@ -147,6 +159,7 @@ span{
 
 .btn{
     display: inline-block;
+    
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -178,6 +191,7 @@ span{
 
 .about-img img{
     width: 35vw;
+    border-radius: 50%;
 }
 
 .heading{
@@ -235,7 +249,7 @@ span{
     font-size: 2.6rem;
 }
 .services-box p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
 }
 
@@ -391,7 +405,9 @@ span{
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+
     }
+    
 }
 
 @media (max-width: 991px) {
@@ -427,12 +443,13 @@ span{
         left: 0;
         width: 100%;
         background: var(--bg-color);
-        border-top: 1rem solid rgba(0, 0, 0, 0.2);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
     }
     .navbar.active {
-        display: block;;
+        display: block;
+    
     }
     .navbar a {
         display: block;
@@ -450,6 +467,7 @@ span{
         font-size: 5rem;
     }
     .home-img img {
+        
         width: 70vw;
         margin-top: 4rem;
     }
